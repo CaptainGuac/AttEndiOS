@@ -15,6 +15,9 @@ class  HomeViewController: UIViewController {
         //Do additional setup after loading view
     }
     
+    @IBAction func RestartButton(_ sender: Any) {
+        self.performSegue(withIdentifier: "Restart", sender: self)
+    }
     override func didReceiveMemoryWarning() {
         super.didReceiveMemoryWarning()
         //Dispose of and recources that can be recreated
